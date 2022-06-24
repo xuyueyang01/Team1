@@ -34,7 +34,7 @@ int main ()
 	{		
 		//4. 等待并建立客户端的连接
 		printf("accept..........\n");
-		int connfd = accept(sockfd,(struct sockaddr *) &client_addr, &addrlen);
+		int connfd = accept(sockfd,(struct sockaddr *) &client_addr, &addrlen); 	
 	
 		//5. 为已连接客户端创建聊天任务
 		create_task(chatfunc, (void*)&connfd);
